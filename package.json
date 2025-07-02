@@ -1,0 +1,13 @@
+{
+  "name": "web_vegetable",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd ./fe && yarn install && cd ../beb && npm run build",
+    "start": "php artisan serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
