@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cd ./fe && yarn install && cd ../beb && npm install && npm run build",
+    "build": "cd ./fe && yarn install && cd ../beb && yarn install && yarn build",
     "start": "php artisan serve"
   },
   "keywords": [],
