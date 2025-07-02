@@ -4,7 +4,7 @@ const baseURL = process.env.REACT_APP_BASE_URL;
 const timeout = +process.env.REACT_APP_BASE_TIMEOUT || 20000;
 
 const axiosInstance = axios.create({
-    baseURL,
+    baseURL: import.meta.env.MODE === "development" ? {baseURL} : "/api",
     timeout,
 });
 console.log("Base URL:", baseURL);
