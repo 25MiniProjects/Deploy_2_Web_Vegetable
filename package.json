@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cd ./fe && yarn install && cd ../beb && yarn install && yarn build",
-    "start": "php artisan serve"
+    "build": "cd ./fe && yarn install && cd ../beb && composer install --no-dev && yarn install && yarn build",
+    "start": "php artisan serve --host=0.0.0.0 --port=${PORT}"
   },
   "keywords": [],
   "author": "",
